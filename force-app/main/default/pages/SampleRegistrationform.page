@@ -1,0 +1,63 @@
+<apex:page controller="SampleRegistrationform" >
+    <apex:sectionHeader title="Employee" subtitle="New Employee" help="/apex/apex-help" />
+		<apex:form >
+    		<apex:pageBlock title="Employee Registration" id="pg" >
+                <apex:pageBlockButtons location="top" >
+                	<apex:commandButton value="Save" reRender="pg"/>
+                    <apex:commandButton value="Cancel" reRender="pg" />
+                    </apex:pageBlockButtons>
+              
+                    <apex:pageBlockSection title="Basic Information" columns="2">
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Last Name"  />
+                            <apex:inputText value="{!LastName}" />                        
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Pancard"/>
+                        <apex:inputSecret value="{!Pancard}"/>
+                            </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="First Name"  />
+                            <apex:inputText value="{!FirstName}" />                        
+                        </apex:pageBlockSectionItem>
+                        
+              
+                            <apex:pageBlockSectionItem >
+                                <apex:outputLabel value="Technology" />
+                            <apex:selectCheckboxes value="{!Technology}">
+                                <apex:selectOption itemLabel="Admin" itemValue="Admin"/>
+                                <apex:selectOption itemLabel="Development" itemValue="Development"/>                            
+                            </apex:selectCheckboxes>   
+                                </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="City"/>
+                            <apex:selectList size="1" >
+                                <apex:selectOption itemValue="--None--" />
+                                <apex:selectOption itemValue="Chennai" />
+                                <apex:selectOption itemValue="Salem" />
+                                <apex:selectOption itemValue="Coimbatore" />
+                                <apex:selectOption itemValue="Bangalore" />
+                                <apex:selectOption itemValue="Hyderabad" />
+                            </apex:selectList>
+                            	</apex:pageBlockSectionItem>
+							<apex:pageBlockSectionItem >
+                                <apex:outputLabel value="Gender"/>
+                            <apex:selectRadio value="{!Gender}">
+                                <apex:selectOption itemLabel="Male" itemValue="Male"/>
+                                <apex:selectOption itemLabel="Female" itemValue="Female"/>                                
+                            </apex:selectRadio>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Address"/>
+                            <apex:inputTextarea rows="3" cols="20" value="{!Address}" />
+                        </apex:pageBlockSectionItem>
+                                <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="PermenantAddress"/>
+                            <apex:inputTextarea rows="3" cols="20" value="{!PermenantAddress}" />   
+                                    </apex:pageBlockSectionItem>
+                     	</apex:pageBlockSection> 
+                
+           </apex:pageBlock>
+          
+    </apex:form>    
+</apex:page>

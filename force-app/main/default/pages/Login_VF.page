@@ -1,0 +1,8 @@
+<apex:page controller="Loginsetupcontroller">
+    <apex:form >
+    <apex:pageMessages showDetail="false"></apex:pageMessages>
+        Username: <apex:inputText value="{!username}"/> <br/>
+   		Password: <apex:inputText value="{!password}"/> 
+        <apex:commandButton action="{!checkcredential}" value="Submit"/>
+    </apex:form>
+ </apex:page>

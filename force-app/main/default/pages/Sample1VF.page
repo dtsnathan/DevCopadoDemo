@@ -1,0 +1,7 @@
+<apex:page >
+    <apex:sectionHeader title="Employee" subtitle="New Employee" help="/apex/apex_page" rendered="true" description="This is description"/>
+    Name : Senthilnathan T <br/>
+    Age : 35 <br/>
+    Designation : Tech lead
+    
+</apex:page>

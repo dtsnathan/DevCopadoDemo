@@ -1,0 +1,6 @@
+<apex:page controller="SampleCalculator" action="{!oneYear}" >
+    <apex:form >
+    <apex:commandButton Value="Two" action="{!twoYear}"/>
+        {!Intrest}
+    </apex:form>
+</apex:page>

@@ -1,0 +1,6 @@
+<apex:page controller="SampleControllerStudent" >
+    Name = {!Name} <br/>
+    Branch= {!Branch}<br/>
+    Phone = {!Phone}
+    
+</apex:page>

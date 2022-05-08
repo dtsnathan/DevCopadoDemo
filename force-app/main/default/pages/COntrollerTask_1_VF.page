@@ -1,0 +1,12 @@
+<apex:page controller="ControllerTask1" sidebar="false" showHeader="false">
+    <apex:outputText value="{!str}"> </apex:outputText>
+    <apex:form >
+    <apex:pageBlock title="Summary">
+    	<apex:pageBlockSection title="Details">
+            Please enter the value a <apex:inputtext value="{!str1}"/>
+            Output of Value b <apex:outputText value="{!str2}"> </apex:outputText>
+    		<apex:commandButton value="Save" action="{!add}"/>
+            </apex:pageBlockSection>
+               </apex:pageBlock>        
+  </apex:form>
+</apex:page>
